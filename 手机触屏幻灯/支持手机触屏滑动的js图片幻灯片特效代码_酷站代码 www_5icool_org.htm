@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0039)http://www.5icool.org/demo/2014/a01163/ -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><HTML 
+xmlns="http://www.w3.org/1999/xhtml"><HEAD><META content="IE=11.0000" 
+http-equiv="X-UA-Compatible">
+<META http-equiv="Content-Type" content="text/html; charset=gb2312"> 
+<TITLE>支持手机触屏滑动的js图片幻灯片特效代码_酷站代码 www.5icool.org</TITLE> 
+<SCRIPT src="支持手机触屏滑动的js图片幻灯片特效代码_酷站代码%20www_5icool_org_files/scroll.js" type="text/javascript"></SCRIPT>
+ 
+<STYLE type="text/css">
+*{margin:0;padding:0;list-style-type:none;}
+a,img{border:0;}
+body{font:12px/180% Arial, Helvetica, sans-serif, "新宋体";}
+
+.scroll{width:480px;height:181px;margin:20px auto 0 auto; position:relative;overflow:hidden;}
+.mod_01{float:left;width:480px;}
+.mod_01 img{display:block;width:480px;height:181px;}
+.dotModule_new{padding:0 5px;height:11px;line-height:6px;-webkit-border-radius:11px;background:rgba(45,45,45,0.5);position:absolute;bottom:5px;right:10px;z-index:11;}
+#slide_01_dot{text-align:center;margin:3px 0 0 0;}
+#slide_01_dot span{display:inline-block;margin:0 3px;width:5px;height:5px;vertical-align:middle;background:#f7f7f7;-webkit-border-radius:5px;}
+#slide_01_dot .selected{background:#66ff33;}
+</STYLE>
+<BODY>
+<DIV class="scroll">
+<DIV class="slide_01" id="slide_01">
+<DIV class="mod_01"><A href="http://www.5icool.org/"><IMG alt="腾讯视频" src="支持手机触屏滑动的js图片幻灯片特效代码_酷站代码%20www_5icool_org_files/51352100.jpg"></A></DIV>
+<DIV class="mod_01"><A href="http://www.5icool.org/"><IMG alt="神雕侠侣【金庸正版】" src="支持手机触屏滑动的js图片幻灯片特效代码_酷站代码%20www_5icool_org_files/50849300.jpg"></A></DIV>
+<DIV class="mod_01"><A href="http://www.5icool.org/"><IMG alt="装机必备" src="支持手机触屏滑动的js图片幻灯片特效代码_酷站代码%20www_5icool_org_files/54330800.jpg"></A></DIV>
+<DIV class="mod_01"><A href="http://www.5icool.org/"><IMG alt="优酷视频播放器" src="支持手机触屏滑动的js图片幻灯片特效代码_酷站代码%20www_5icool_org_files/21651800.jpg"></A></DIV>
+<DIV class="mod_01"><A href="http://www.5icool.org/"><IMG alt="天翼精品" src="支持手机触屏滑动的js图片幻灯片特效代码_酷站代码%20www_5icool_org_files/52208700.jpg"></A></DIV>
+<DIV class="mod_01"><A href="http://www.5icool.org/"><IMG alt="梦想海贼王(送路飞)" src="支持手机触屏滑动的js图片幻灯片特效代码_酷站代码%20www_5icool_org_files/02856300.jpg"></A></DIV>
+<DIV class="mod_01"><A href="http://www.5icool.org/"><IMG alt="酷站代码" src="支持手机触屏滑动的js图片幻灯片特效代码_酷站代码%20www_5icool_org_files/92191400.jpg"></A></DIV>
+<DIV class="mod_01"><A href="http://www.5icool.org/"><IMG alt="安全管家" src="支持手机触屏滑动的js图片幻灯片特效代码_酷站代码%20www_5icool_org_files/44452000.jpg"></A></DIV></DIV>
+<DIV class="dotModule_new">
+<DIV id="slide_01_dot"></DIV></DIV></DIV>
+<SCRIPT type="text/javascript">
+if(document.getElementById("slide_01")){
+	var slide_01 = new ScrollPic();
+	slide_01.scrollContId   = "slide_01"; //内容容器ID
+	slide_01.dotListId      = "slide_01_dot";//点列表ID
+	slide_01.dotOnClassName = "selected";
+	slide_01.arrLeftId      = "sl_left"; //左箭头ID
+	slide_01.arrRightId     = "sl_right";//右箭头ID
+	slide_01.frameWidth     = 480;
+	slide_01.pageWidth      = 480;
+	slide_01.upright        = false;
+	slide_01.speed          = 10;
+	slide_01.space          = 30; 
+	slide_01.initialize(); //初始化
+}
+</SCRIPT>
+ 
